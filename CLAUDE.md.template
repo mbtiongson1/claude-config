@@ -1,0 +1,7 @@
+# graphify
+- **graphify** (`~/.claude/skills/graphify/SKILL.md`) - any input to knowledge graph. Trigger: `/graphify`
+When the user types `/graphify`, invoke the Skill tool with `skill: "graphify"` before doing anything else.
+
+# checkpoint
+- **checkpoint** (`~/.claude/skills/checkpoint/SKILL.md`) - push all in-flight subagent work to a PR with a handoff note, then produce one compaction-safe session summary, so the same orchestrator can /compact right after and resume immediately without re-verifying state. Trigger: `/checkpoint`
+When the user types `/checkpoint`, invoke the Skill tool with `skill: "checkpoint"` before doing anything else.

@@ -1,0 +1,15 @@
+# Local-only Claude Code state
+settings.local.json
+settings.json.bak
+.claude.json
+history.jsonl
+projects/
+sessions/
+plugins/
+skills/
+shell-snapshots/
+session-env/
+.DS_Store
+*.log
+.env
+.env.local
