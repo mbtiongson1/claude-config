@@ -49,7 +49,7 @@ diff ~/Documents/claude-config/settings.json.template ~/.claude/settings.json
 
 | Path | Purpose |
 |------|---------|
-| `helpers/context-statusline.cjs` | Status line: shows context usage as a 10-cell bar with `used / max` tokens, measured against the autocompact threshold (window minus a 33k reserve). Appends to any existing status line output. |
+| `helpers/context-statusline.cjs` | Status line. Top row: model name and effort level, right-aligned, with effort colored by level. Then the graft status, a 10-cell context bar (`used / max` tokens against the autocompact threshold, window minus a 33k reserve), and a session usage line: `↑` uncached input, `↓` output, `R` cache reads, `CH` cache hit rate, `$` API-equivalent cost estimate from the transcript. |
 | `settings.json.template` | Default settings: model, per-model effort levels, theme, 12-hour time, cache TTLs, notifications, and the status line command. |
 | `CLAUDE.md.template` | Global instructions loaded into every session. |
 | `bin/install-claude-config.sh` | Installer: copies helpers, merges settings (with backup), installs CLAUDE.md if missing. |
